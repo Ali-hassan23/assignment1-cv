@@ -73,33 +73,7 @@ header{
     color: rgb(80, 78, 78);
 }
 
-@media (max-width: 768px) {
-    .about-information-section {
-        flex-direction: column;
-        align-items: center; 
-        /* text-align: center;  */
-    }
-    .about-box {
-        width: 100%;
-        margin-bottom: 20px; 
-    }
-    .about-box p {
-        width: 100%;
-    }
-    .between-line {
-        display: none; 
-    }
-    .info-box {
-        width: 100%; 
-    }
-    .info-labels, .info-info {
-        width: 100%; 
-        text-align: left; 
-    }
-    .info-box h3, .info-info p {
-        margin-bottom: 5px;
-    }
-}
+
 
 .about-information-section:hover {
     transform: scale(1.05);
@@ -148,9 +122,56 @@ header{
     color:rgb(80, 78, 78);
 }
 
+@media (max-width: 768px) {
+    .about-information-section {
+        flex-direction: column;
+        padding: 30px 0px;
+        text-align: center; 
+    }
+    .about-information-section h1{
+        text-align: center;
+    }
+    .about-box {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+    .about-box p{
+        text-align: justify;
+        padding-left: 50px;
+    }
+    .between-line {
+        display: none; 
+    }
+    .info-box {
+        width: 100%; 
+        padding: 10px;
+    }
+    .info-labels, .info-info {
+        width: 100%; 
+        text-align: left; 
+    }
+    .info-box h3, .info-info p {
+        margin-bottom: 5px;
+    }
+}
+
 .heading-box{
     text-align: center;
     margin: 30px 0px;
+}
+
+.progress-section{
+    margin: 45px;
+    background-color: rgb(250, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+    flex-direction: row;
+    color: rgb(80, 78, 78);
+}
+
+.progress-section:hover{
+    transform: scale(1.05);
 }
 
 .whole-progress{
@@ -175,6 +196,20 @@ header{
     justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+    .whole-progress{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .progress-bar {
+        width: 100%; 
+    }
+
+    .progress-labels {
+        font-size: 16px; 
+    }
+}
 .education-section{
     margin: 45px;
     background-color: rgb(250, 255, 255);
@@ -209,6 +244,7 @@ tr:nth-child(even) {
 @media (max-width: 768px) {
     th, td {
         padding: 8px;
+        font-size: 12px; 
     }
 }
 
